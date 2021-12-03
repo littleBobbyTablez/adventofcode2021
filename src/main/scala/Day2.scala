@@ -28,9 +28,9 @@ object Day2 extends App {
     }
   }
 
-    private val result2: aimPosition = split.foldLeft(aimPosition(0, 0, 0)) ((acc: aimPosition, x: (String, Int)) =>
+  private val result2: aimPosition = split.foldLeft(aimPosition(0, 0, 0)) ((acc: aimPosition, x: (String, Int)) =>
       moveWithAim(x, acc))
 
-    println(result2)
-    println(result2.x * result2.y)
+  println(result2)
+  println(result2.x * result2.y)
 }
